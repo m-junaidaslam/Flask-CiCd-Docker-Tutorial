@@ -1,0 +1,8 @@
+buildjob:
+  stage:build
+  tags:
+    - flaskciapp
+  script:
+    - docker build -t junaidaslam797/flaskcidockerapp:latest .
+    - docker image push junaidaslam797/flaskcidockerapp:latest
+    
